@@ -2,6 +2,7 @@ import "./App.css";
 import CounterSection from "./component/CounterSection";
 import Hero from "./component/Hero";
 import Navbar from "./component/Navbar";
+import Started from "./component/Started";
 
 function App() {
   return (
@@ -9,6 +10,8 @@ function App() {
       <Navbar />
       <Hero/>
       <CounterSection/>/
+      <Started/>
+
 
 
     </div>
