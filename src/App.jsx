@@ -1,17 +1,12 @@
- 
-import './App.css'
+import "./App.css";
+import Navbar from "./component/Navbar";
 
 function App() {
- 
-
   return (
-    <div className='p-8'>
-       <h1 className='text-3xl font-bold text-center'>Check tailwind</h1>
-       <div className=' flex justify-center p-5'>
-        <button className='btn btn-primary '>Check daisyUi</button>
-       </div>
+    <div>
+      <Navbar />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
