@@ -1,4 +1,5 @@
 import "./App.css";
+import CounterSection from "./component/CounterSection";
 import Hero from "./component/Hero";
 import Navbar from "./component/Navbar";
 
@@ -7,6 +8,8 @@ function App() {
     <div>
       <Navbar />
       <Hero/>
+      <CounterSection/>/
+
 
     </div>
   );
