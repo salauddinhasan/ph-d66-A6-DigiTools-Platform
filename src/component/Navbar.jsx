@@ -2,7 +2,7 @@ import { FaCartShopping } from "react-icons/fa6";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center px-8 py-4 shadow-md bg-white max-w-7xl mx-auto rounded-lg">
+    <div className="flex justify-between items-center px-3 md:px-8 py-4 shadow-md bg-white max-w-7xl mx-auto rounded-lg">
       {/* Logo */}
       <div>
         <h1 className="text-2xl font-bold text-primary cursor-pointer">
@@ -30,7 +30,7 @@ const Navbar = () => {
       </nav>
 
       {/* Right Side */}
-      <div className="flex gap-5 items-center">
+      <div className="flex gap-3 md:gap-5 items-center">
         <FaCartShopping className="text-xl cursor-pointer hover:text-primary transition" />
 
         <h2 className="text-sm font-medium cursor-pointer hover:text-primary">
