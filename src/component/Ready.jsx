@@ -2,8 +2,8 @@ import React from "react";
 
 const Ready = () => {
   return (
-    <div className="bg-gray-50 py-20 px-2">
-      <div className="bg-linear-to-l rounded-lg from-purple-600/80 to-pink-500/80 p-8 md:p-16 text-center text-white shadow-xl">
+    <div className="bg-gray-50 pt-20 px-2">
+      <div className="bg-linear-to-l rounded-t-lg from-purple-600/80 to-pink-500/80 p-8 md:p-16 text-center text-white shadow-xl">
         <div className="space-y-6">
           <h2 className="text-3xl md:text-5xl font-bold">
             Ready to Transform Your Workflow?

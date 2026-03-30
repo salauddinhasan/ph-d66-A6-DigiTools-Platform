@@ -5,7 +5,7 @@ import twitterImg from "../assets/twitter.png";
 
 const Footer = () => {
   return (
-    <div className="bg-black text-white py-12 mx-2 rounded-lg">
+    <div className="bg-black text-white py-12 mx-2 rounded-b-lg">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8 p-4 max-w-7xl mx-auto">
         <div className="col-span-1 md:col-span-4 space-y-4">
           <h2 className="text-2xl font-bold text-purple-500">DigiTools</h2>
