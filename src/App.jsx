@@ -1,5 +1,6 @@
 import "./App.css";
 import CounterSection from "./component/CounterSection";
+import Footer from "./component/Footer";
 import Hero from "./component/Hero";
 import Navbar from "./component/Navbar";
 import Ready from "./component/Ready";
@@ -15,7 +16,7 @@ function App() {
       <Started/>
       <SimplePricing/>
       <Ready/>
-
+      <Footer/>
 
     </div>
   );
