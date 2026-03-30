@@ -42,7 +42,7 @@ const SimplePricing = () => {
             <p className="text-purple-100">Best for professionals </p>
           </div>
           <div className="flex justify-center">
-            <p className="absolute -top-3 bg-purple-300 rounded-full px-4 py-1">
+            <p className="absolute -top-3 left-1/2 -translate-x-1/2 bg-purple-300 rounded-full px-4 py-1 text-sm font-semibold whitespace-nowrap">
               Most Popular
             </p>
           </div>

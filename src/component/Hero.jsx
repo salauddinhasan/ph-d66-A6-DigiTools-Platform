@@ -6,7 +6,7 @@ import heroImg from "../assets/banner.png";
 
 const Hero = () => {
   return (
-    <div className="relative overflow-hidden bg-gradient-to-br from-purple-50 via-white to-pink-50 ">
+    <div className="relative overflow-hidden bg-linear-to-br from-purple-50 via-white to-pink-50 p-4">
       {/* Background blur circle */}
       <div className="absolute top-[-50px] left-[-50px] w-[300px] h-[300px] bg-purple-300 opacity-30 rounded-full blur-3xl"></div>
       <div className="absolute bottom-[-50px] right-[-50px] w-[300px] h-[300px] bg-pink-300 opacity-30 rounded-full blur-3xl"></div>
@@ -23,7 +23,7 @@ const Hero = () => {
           </div>
 
           {/* Heading */}
-          <h2 className="text-4xl md:text-6xl font-extrabold leading-tight transform transition-all duration-300 hover:-translate-y-2">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight transform transition-all duration-300 hover:-translate-y-2">
             Supercharge Your <br />
             <span className="bg-linear-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text">
               Digital Workflow

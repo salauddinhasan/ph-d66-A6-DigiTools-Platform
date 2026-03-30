@@ -2,7 +2,7 @@
 
 const CounterSection = () => {
   return (
-    <div className="bg-linear-to-r rounded-lg from-purple-600 to-pink-500 py-8 transition-all duration-300 text-center hover:-translate-y-2">
+    <div className="bg-linear-to-r rounded-lg from-purple-600 to-pink-500 py-8 transition-all duration-300 text-center hover:-translate-y-2 p-4 mx-2">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-white text-center gap-8 ">
         {/* Item 1 */}
         <div className="space-y-2 transition-all duration-300 text-center hover:-translate-y-2">
