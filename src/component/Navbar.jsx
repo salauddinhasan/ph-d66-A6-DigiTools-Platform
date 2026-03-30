@@ -5,7 +5,7 @@ const Navbar = () => {
     <div className="flex justify-between items-center px-3 md:px-8 py-4 shadow-md bg-white max-w-7xl mx-auto rounded-lg">
       {/* Logo */}
       <div>
-        <h1 className="text-2xl font-bold text-primary cursor-pointer">
+        <h1 className="text-2xl font-bold cursor-pointer text-purple-500">
           DigiTools
         </h1>
       </div>
@@ -37,7 +37,7 @@ const Navbar = () => {
           Login
         </h2>
 
-        <button className="btn btn-primary rounded-full px-5">
+        <button className="btn bg-linear-to-br from-purple-500 rounded-full px-5">
           Get Started
         </button>
       </div>

@@ -1,4 +1,4 @@
-import React from "react";
+ 
 import createImg from "../assets/user.png";
 import chooseImg from "../assets/package.png";
 import startImg from "../assets/rocket.png";
