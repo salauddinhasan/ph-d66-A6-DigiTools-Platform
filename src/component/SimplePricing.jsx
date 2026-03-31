@@ -3,7 +3,7 @@ const SimplePricing = () => {
     <div className="bg-gray-50 py-10 px-5">
       {/* Title Section */}
       <div className="text-center mb-12 space-y-3">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800">
+        <h2 className="text-4xl md:text-4xl font-bold lg:text-5xl text-gray-800">
           Simple, Transparent Pricing
         </h2>
         <p className="text-gray-500 text-lg">

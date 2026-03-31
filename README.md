@@ -1,16 +1,29 @@
-# React + Vite
+DigiTools is a modern digital product marketplace where users can browse various subscription-based tools and easily add them to a cart for purchase. It features a fully responsive and user-friendly interface built with React.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Demo:
 
-Currently, two official plugins are available:
+  https://salauddin-digitools-platform.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Technologies Used
+1. Frontend: React.js (Vite)
 
-## Expanding the ESLint configuration
+2. Styling: Tailwind CSS & DaisyUI
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. Icons: React Icons
+
+7. Notifications: React-Toastify (NPM Package)
+
+
+
+
+Deployment: Netlify
+
+1. Key FeaturesDynamic Product Toggling: Seamlessly switch between 'Products' and 'Cart' sections using a tab-based navigation system on the same page.
+
+2. Interactive Cart System:  Users can add products to the cart, remove specific items, and view real-time total price calculations.
+
+3. Smart Notifications: Integrated React-Toastify to show beautiful alert messages when adding items, removing items, or proceeding to checkout.
+
+4. Responsive Design: Optimized for all screen sizes, from mobile devices to large desktops, following modern UI/UX standards.

@@ -62,8 +62,8 @@ const CardStore = ({ card, carts, setCarts}) => {
           ))}
         </ul>
 
-        <button onClick={handleBuyButton} disabled={isBought} className=" w-full py-3 bg-purple-400 text-white font-semibold rounded-xl hover:bg-purple-600 transition-colors">
-         {isBought ? 'Purchase Done' : 'Buy Now'}
+        <button onClick={handleBuyButton} disabled={isBought} className=" w-full py-3 bg-purple-600 text-white font-semibold rounded-xl hover:bg-pink-500 transition-colors">
+         {isBought ? 'Added to Cart' : 'Buy Now'}
            
         </button>
       </div>

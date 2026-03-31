@@ -29,7 +29,7 @@ const Started = () => {
     <div className="max-w-7xl mx-auto py-16 px-4">
       {/* Title Section */}
       <div className="text-center mb-12 space-y-3">
-        <h2 className="text-3xl md:text-5xl font-bold">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
           Get Started in{" "}
           <span className="bg-linear-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text">
             3 Steps
