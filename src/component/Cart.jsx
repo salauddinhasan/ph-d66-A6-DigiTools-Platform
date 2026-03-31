@@ -1,14 +1,19 @@
 import React from "react";
 import Tab from "./Tab";
+import { toast } from "react-toastify";
 
 const Cart = ({ carts, setCarts}) => {
     const handlePayment = () => {
         setCarts([])
+        
+         toast.warning('All Items to remove')
     }
 
     const handleDelete =(cart) => {
         const filterArray = carts.filter(c => c.id !== cart.id)
          setCarts(filterArray)
+
+         toast.error('Item added to remove')
     }
    
   return (

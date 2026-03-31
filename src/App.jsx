@@ -1,4 +1,4 @@
-import {Suspense, useState } from "react";
+import { Suspense, useState } from "react";
 import "./App.css";
 import Card from "./component/Card";
 import CounterSection from "./component/CounterSection";
@@ -19,12 +19,11 @@ const getData = async () => {
 function App() {
   const getDataPromise = getData();
   const [isActiveTab, setIsActiveTab] = useState("Products");
-  const [carts, setCarts] = useState([])
- 
-   
+  const [carts, setCarts] = useState([]);
+
   return (
     <div>
-      <Navbar />
+      <Navbar carts={carts}/>
       <Hero />
       <CounterSection />/
       <Tab />
@@ -33,7 +32,11 @@ function App() {
         <input
           type="radio"
           name="my_tabs_1"
-          className="tab  w-30 rounded-full bg-purple-600 text-white font-semibold text-base"
+          className={`tab w-30 rounded-full font-semibold text-base transition-all ${
+            isActiveTab === "Products"
+              ? "bg-purple-600 text-white"
+              : "text-gray-500 bg-gray-100"
+          }`}
           aria-label="Products"
           defaultChecked
           onClick={() => setIsActiveTab("Products")}
@@ -41,17 +44,27 @@ function App() {
         <input
           type="radio"
           name="my_tabs_1"
-          className="tab w-30 rounded-full text-gray-500 font-semibold text-base"
+          className={`tab w-30 rounded-full font-semibold text-base transition-all ${
+            isActiveTab === "Cart"
+              ? "bg-purple-600 text-white"
+              : "text-gray-500 bg-gray-100"
+          }`}
           aria-label={`Cart (${carts.length})`}
           onClick={() => setIsActiveTab("Cart")}
         />
       </div>
-      <Suspense fallback={<span className="loading loading-spinner loading-lg"></span>}>
-
-        {isActiveTab === "Products" && <Card getDataPromise={getDataPromise} carts={carts} setCarts={setCarts} />}
-
+      <Suspense
+        fallback={<span className="loading loading-spinner loading-lg"></span>}
+      >
+        {isActiveTab === "Products" && (
+          <Card
+            getDataPromise={getDataPromise}
+            carts={carts}
+            setCarts={setCarts}
+          />
+        )}
       </Suspense>
-      {isActiveTab === 'Cart' && <Cart carts={carts} setCarts={setCarts} />}
+      {isActiveTab === "Cart" && <Cart carts={carts} setCarts={setCarts} />}
       <Started />
       <SimplePricing />
       <Ready />

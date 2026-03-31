@@ -1,6 +1,6 @@
 import { FaCartShopping } from "react-icons/fa6";
 
-const Navbar = () => {
+const Navbar = ({carts}) => {
   return (
     <div className="flex justify-between items-center px-3 md:px-8 py-4 shadow-md bg-white max-w-7xl mx-auto rounded-lg">
       {/* Logo */}
@@ -31,7 +31,20 @@ const Navbar = () => {
 
       {/* Right Side */}
       <div className="flex gap-3 md:gap-5 items-center">
-        <FaCartShopping className="text-xl cursor-pointer hover:text-primary transition" />
+
+        <div className="relative cursor-pointer group">
+          <FaCartShopping className="text-2xl cursor-pointer hover:text-primary transition" />
+
+        {
+          carts.length > 0 && (
+            <span className="absolute -top-2 -right-2 bg-purple-500 text-white text-[7px] font-bold px-1.5 py-0.5 rounded-full border-2 border-white">
+              {carts.length}
+            </span>
+          )
+        }
+        </div>
+        
+        
 
         <h2 className="text-sm font-medium cursor-pointer hover:text-primary">
           Login
