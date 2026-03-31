@@ -46,12 +46,12 @@ function App() {
           onClick={() => setIsActiveTab("Cart")}
         />
       </div>
-      <Suspense fallback={<p>salauddin loading....</p>}>
+      <Suspense fallback={<span className="loading loading-spinner loading-lg"></span>}>
 
         {isActiveTab === "Products" && <Card getDataPromise={getDataPromise} carts={carts} setCarts={setCarts} />}
 
       </Suspense>
-      {isActiveTab === 'Cart' && <Cart carts={carts} />}
+      {isActiveTab === 'Cart' && <Cart carts={carts} setCarts={setCarts} />}
       <Started />
       <SimplePricing />
       <Ready />
